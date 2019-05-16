@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="scripts/parallax.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -44,7 +45,7 @@
 
     </header>
 
-    <section class="section-header">
+    <section class="section-header" >
    
     <div class="padre-box">
         
@@ -67,9 +68,9 @@
 
 
         <div class="box box2" >
-            <div class="img-container">
+            <div class="img-container" id="scene">
                 
-                <div class="img"></div>
+                <div class="img layer" data-depth="-1" ></div>
 
             </div>
         </div>
@@ -105,5 +106,75 @@
     
     </section>
      
+    <section class="section-three">
+        
+        <h4 class="subtitulo dlz">¿Como funciona starbucks?</h4>
+
+        <div class="fb-box">
+            <div class="fb1">
+                <div class="fb-img pick1"></div>
+            </div>
+            <div class="fb2">
+                <h1 class="number"> 1 </h1>
+                <h2 class="titulo"> Elegir el tipo de cafe </h2>
+                <p class="fb2-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+   <div class="fb-box inv">
+       <div class="fb1 inv">
+         <div class="fb-img pick2"></div>
+       </div>
+       <div class="fb2 inv">
+           
+            <h1 class="number"> 2 </h1>
+                <h2 class="titulo"> Elegir el complemento </h2>
+                <p class="fb2-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+       </div>
+
+   </div>
+
+
+
+    <div class="fb-box">
+            <div class="fb1">
+                <div class="fb-img pick3"></div>
+            </div>
+            <div class="fb2">
+                <h1 class="number"> 3 </h1>
+                <h2 class="titulo"> Disfruta tu cafe! </h2>
+                <p class="fb2-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+     
 </body>
+<script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+</script>
 </html>
