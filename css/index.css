@@ -217,7 +217,7 @@ section.section-two
 }
 .item-novedad
 {
-   /*    border: 1px solid #f2f2f2;*/
+       /*border: 1px solid red;*/
 }
 .item-novedad.n
 {
@@ -265,12 +265,24 @@ section.section-two
     font-family: Lato;
     font-size: 23px;
 
+
 }
 .item-novedad.two
 {
-    background: url('../img/productos/2.jpg')no-repeat;
     background-size: cover;
     border-radius: 3px;
+}
+.two-box1
+{
+    width: 100%;
+    height: 50%;
+    background: #fff;
+}
+.two-box2
+{
+    width: 100%;
+    height: 50%;
+    background: green;
 }
 section.section-three
 {
@@ -376,41 +388,133 @@ section.section-promo
     color: rgba(0,99,65,1);
 
 }
-.grid-lugares
+.lugares
 {
-    height:700px;
-    width: 100%;
-    margin: 30px 0;
-    display: grid;
-    grid-template-columns: repeat(4 ,240px);
-    justify-content:center;
-    box-sizing: border-box;
-    padding: 20px;
-    grid-gap: 20px;
+    height:70%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .lugar-item
 {
-    border: 1px solid;
-    height: 450px;
-    width: 220px;
-    margin: 0 auto;
+    transition: 500ms;
+    background: red;
+    width: 90%;
+    height: 70%;
+    background: blue;
+    display: inherit;
+    align-items: inherit;
 }
+.lugar-item .n1
+{
+    height: 100%;
+    width: 30%;
+    background: #fff;
+    display: inherit;
+    justify-content: center;
+    align-items: inherit;
+}
+.n1 .n1-img
+{
+    width: 50%;
+    height: 50%;
+    background: url('../img/logo.jpg')no-repeat;
+    background-size: cover;
+    transition: 500ms;
+}
+.n1-img:hover
+{
+    transform: rotateY(180deg);
+}
+.lugar-item .n2
+{
+    width: 70%;
+    height: 100%;
+    background: pink;
+}
+.n2-img
+{
+    width: 100%;
+    height: 100%;
+    background: url('../img/lugares/inicio.jpg')no-repeat;
+    background-size: cover;
+}
+.n2-box-content
+{
+    
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+.box-content-icon
+{
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}
+.icon-box-icon
+{
+    width: 50%;
+    height: 50%;
+    background: green;
+    background: url('../img/iconos/lugar.png');
+    background-size: cover;
+}
+.box-content-h3
+{
+    padding: 0;
+    margin: 0;
+    color:#fff;
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    height:60px;
+}
+.box-content-p
+{
+  margin: 0;
+  padding: 20px;
+  padding-top: 0;
+  color:#fff;
+  font-family: Roboto;
+  text-align: center;
+  padding-top: 10px;
+}
+.n2-deg
+{
+    width: 40%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+}
+.lugar-item:hover
+{
+    /*transform: scale(1.03);*/
+}
+
 .f1
 {
-    background: url('../img/lugares/1.jpg');
+    background: url('../img/lugares/canada.jpg');
+    background-position: center;
     background-size: cover;
+    height: 480px;
 }
 .f2
 {
-    height: 400px;
+    width: 600px;
 }
 .f3
 {
-    height: 350px;
+    background: blue;
+    width: 0;
+    height: 0;
 }
-.f4
-{
-    height: 300px;
-}
-
-
