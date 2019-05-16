@@ -29,6 +29,7 @@ header ul.header-list
     align-items: center;
 
 }
+
 .header-list .box-url
 {
     width: 50%;
@@ -77,7 +78,10 @@ section.section-header
 }
 .box.box1
 {
-  background: #fff;
+  background:#fff;
+  box-sizing: border-box;
+  padding-top: 70px;
+
 }
 .box1 h4.subtitulo
 {
@@ -131,6 +135,30 @@ button.saber-mas
 }
 .box2
 {
- 
+ background: #fff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+.box2 .img-container
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-container .img
+{
+    width:90%;
+    height:90%;
+    background: url('../img/productos/4.jpg')no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
 
