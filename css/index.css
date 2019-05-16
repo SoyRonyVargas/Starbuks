@@ -3,12 +3,22 @@ body
    padding: 0;
    margin: 0;
 }
+body::-webkit-scrollbar
+{
+    width: 3px;
+    background: #f2f2f2;
+}
+body::-webkit-scrollbar-thumb
+{
+    background: rgba(0,99,65,1);
+}
 header.header
 {
   
     height: 10vh;
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid #ddd;
 }
 header ul.header-list
 {
@@ -40,13 +50,31 @@ header ul.header-list
 }
 .box-url a.link
 {
-    background: red;
     margin: 0 10px;
-    height: 100%;
-    display: inherit;
     align-items: inherit;
     padding: 0 8px;
     text-decoration: none;
+    font-family: Lato;
+    color:#979A9A;
+    margin-top: 8px;
+}
+a.link .lineaC
+{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+.lineaC .linea
+{
+    width: 0%;
+    height: 4px;
+    background: #006341;
+    transition: 500ms;
+}
+a.link:hover .linea
+{
+   width: 100%;
 }
 .logo
 {
@@ -83,7 +111,7 @@ section.section-header
   padding-top: 70px;
 
 }
-.box1 h4.subtitulo
+h4.subtitulo
 {
     font-size: 30px;
     padding: 40px;
@@ -92,7 +120,7 @@ section.section-header
     margin: 0;
     font-family: Lato;
     font-weight: normal;
-    color:#ddd; 
+    color:#979A9A; 
 }
 h2.titulo-exp
 {
@@ -160,5 +188,79 @@ button.saber-mas
     left: 0;
 
 }
+section.section-two
+{
+    background: #ddd;
+    width: 100%; 
+    height: 100vh; 
+}
+.section-two h4.subtitulo
+{
+    color:rgba(0,99,65,1);
+}
+.grid-padre
+{
+    display: grid;
+    /*grid-template-columns: repeat(2, minmax(200px));*/
+    grid-template: repeat(2, 200px)/ repeat(2,500px) ;
+    grid-gap: 30px;
+    padding: 20px;
+    /*background: red;*/
+    justify-content: center;
+}
+.item-novedad
+{
+   /*    border: 1px solid #f2f2f2;*/
+}
+.item-novedad.n
+{
+    background: blue;
+    height: 0;
+    width: 0;
+}
+.item-novedad.one
+{
+    background: transparent;
+    height: 430px;
+}
+.bn
+{
+}
 
+.bn1
+{
+    width: 100%;
+    height: 70%;
+    box-sizing: border-box;
+    background: #fff;
+}
+.bnImg
+{
+    width: 100%;
+    height: 100%;
+    background: url('../img/bebidas/1.jpg')no-repeat;
+    background-size: cover;
+    /*border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+}
+.bn2
+{
+    height: 30%;
+    width: 100%;
+    background: #fff;
+}
+.bn2 h3
+{
+    padding: 5px 15px;
+    margin: 0;
+    color:#000;
+    font-weight: normal;
+    font-family: Lato;
 
+}
+.item-novedad.two
+{
+    background: url('../img/productos/2.jpg')no-repeat;
+    background-size: cover;
+    border-radius: 3px;
+}
