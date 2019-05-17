@@ -1,0 +1,57 @@
+section.section-bebidas
+{
+	height: 90vh;
+}
+.titulo-bebidas
+{
+	text-align: right;
+	margin: 0;
+	padding: 30px;
+	font-size: 40px;
+	font-family: Roboto;
+	color:rgba(0,99,65,1);
+}
+.titulo-bebidas span
+{
+}
+.grid-bebidas
+{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+	box-sizing: border-box;
+	padding-top: 40px;
+}
+.item-bebida
+{
+	height: 380px;
+	width: 290px;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	border-radius: 35px;
+	position: relative;
+}
+.item-bebida > .icono-bebida
+{
+	width: 200px;
+	height: 200px;
+	background:url('../img/productos/2.png')no-repeat;
+	background-size: contain;
+	transform: translate(50%, -50%);
+}
+.item-bebida > .nombre-bebida
+{
+	margin: 0;
+	padding:0;
+	position: absolute;
+	top:120px;
+	text-align: center;
+	font-family: Lato;
+	color:gray;
+
+}
+.item-bebida > hr.lineaHr
+{
+	border-width: 1px;
+	width: 90%;
+	margin: 0 auto;
+}

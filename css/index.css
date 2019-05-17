@@ -539,7 +539,7 @@ section.section-desc
     background: #fff;
     background-size: cover;
     background-position: center;
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 
 }
 section.section-desc > h4.subtitulo
@@ -693,10 +693,51 @@ footer.footer
     background-size: cover;
     margin: 30px;
 }
-.box-footer.footer2 > h2.titulo-footer
+ h2.titulo-footer
 {
     margin: 0;
     padding: 20px;
     font-family: Lato;
     color:#fff;
+}
+.box-footer.footer2 ul.footer-redes
+{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+ul.footer-redes li
+{
+}
+ul.footer-redes li a 
+{
+   color:#fff;
+   font-size: 30px;
+   padding: 10px 20px;
+}
+.box-footer.footer3
+{
+}
+.box-footer.footer3 ul.footer-links
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.footer-links li
+{
+    padding: 5px 20px;
+}
+ul.footer-links li a
+{
+    color:#fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Roboto;
+    transition: 500ms;
+}
+ul.footer-links li a:hover
+{
+    color: #ddd ;
 }
