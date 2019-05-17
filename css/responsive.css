@@ -1,0 +1,28 @@
+@media (max-width: 1050px)
+{
+  section.section-two
+ {
+    height: auto;
+ }
+
+  section.section-two > .grid-padre
+  {
+  	display: block;
+  }
+
+
+}
+@media (max-width: 1063px)
+{
+   .fb2
+   {
+     height: auto;
+   }
+   .lugar-item
+   {
+    
+    height: auto;
+     
+  }
+
+}
