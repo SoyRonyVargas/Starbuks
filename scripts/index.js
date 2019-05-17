@@ -8,8 +8,8 @@
         window.location = "index.html"
 
 	})
-	var ver = document.getElementById('ver-bebidas')
+	/*var ver = document.getElementById('ver-bebidas')
 	ver.addEventListener('click', ()=>{
 		window.location = "bebidas.html"
-	})
+	})*/
 })
