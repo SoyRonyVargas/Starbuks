@@ -258,7 +258,7 @@ section.section-two
 {
     display: grid;
     /*grid-template-columns: repeat(2, minmax(200px));*/
-    grid-template: repeat(2, 200px)/ repeat(2,500px) ;
+    grid-template: repeat(1, 200px)/ repeat(2,500px) ;
     grid-gap: 30px;
     padding: 20px;
     /*background: red;*/
@@ -267,23 +267,75 @@ section.section-two
 }
 .item-novedad
 {
-       /*border: 1px solid red;*/
+       height: 400px;
 }
-.item-novedad.n
+.item-novedad > h4.bienvenido
 {
-    background: blue;
-    height: 0;
-    width: 0;
+    font-family: Scarlet;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    margin:0;
+    padding-top: 40px;
 }
+.item-novedad > h6
+{
+    font-family: Scarlet;
+    text-align: center;
+    font-weight: normal;
+    font-size: 40px;
+    padding: 0;
+    margin:0;
+    color:#000;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-novedad > .bienvenida
+{
+    font-size: 19px;
+    padding: 20px;
+    padding-top: 0;
+    color:#000;
+    text-align: center;
+    font-family: Lato;
+}
+.item-novedad.novedad2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.novedad2 .novedad-img-container
+{
+    width: 45%;
+    height: 90%;
+    background: url('../img/bebidas/nuevo-1.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.novedad-img-container .img2
+{
+    
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: url('../img/bebidas/5.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+    right: -100px;
+    top:-100px;
+
+}
+
 .item-novedad.one
 {
     background: transparent;
     height: 430px;
 }
-.bn
-{
-}
-
 .bn1
 {
     width: 100%;
@@ -751,6 +803,7 @@ ul.footer-redes li a
    color:#fff;
    font-size: 30px;
    padding: 10px 20px;
+   text-decoration: none;
 }
 .box-footer.footer3
 {

@@ -44,6 +44,7 @@ section.section-bebidas
 	border-radius: 35px;
 	position: relative;
 	transition: 500ms;
+	margin-bottom: 130px;
 }
 .item-bebida > .icono-bebida
 {
@@ -76,6 +77,20 @@ section.section-bebidas
 	transform: translate(25%,-50%);
 }
 
+.icono-bebida.icono5
+{
+	background: url('../img/productos/10.png')no-repeat;
+	background-size: contain;
+	background-position: center;
+	transform: translate(25%,-50%);
+}
+.icono-bebida.icono6
+{
+	background: url('../img/productos/11-n.png')no-repeat;
+	background-size: contain;
+	background-position: center;
+	transform: translate(25%,-50%);
+}
 
 
 
