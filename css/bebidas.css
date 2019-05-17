@@ -23,7 +23,6 @@ section.section-bebidas
 }
 .item-bebida
 {
-	height: 380px;
 	width: 290px;
 	margin: 0 auto;
 	background-color: #f2f2f2;
@@ -54,6 +53,15 @@ section.section-bebidas
 	background-position: center;
 	transform: translate(25%,-50%);
 }
+.icono-bebida.icono4
+{
+	background: url('../img/productos/7.png')no-repeat;
+	background-size: contain;
+	background-position: center;
+	transform: translate(25%,-50%);
+}
+
+
 
 
 .item-bebida > .nombre-bebida
@@ -107,8 +115,30 @@ section.section-bebidas
 	border-color: #979A9A;
 	border:none;
 }
-
-
+.item-bebida > .c-a
+{
+	height: 30px;
+	margin: 10px auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.c-a button.agregar
+{
+	width: 70%;
+	height: 30px;
+	border-radius: 30px;
+	border: none;
+	background-color: #fff;
+	margin-bottom: 10px;
+	outline: none;
+	cursor: pointer;
+	font-family: Lato;
+	font-weight: bold;
+	padding: 8px;
+	display: none;
+}
 
 
 .item-bebida:hover
@@ -126,4 +156,8 @@ section.section-bebidas
    border-color: #fff;
    background-color: #979A9A;
 
+}
+.item-bebida:hover button.agregar
+{
+	display: block;
 }
