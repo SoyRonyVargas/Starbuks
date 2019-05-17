@@ -18,6 +18,14 @@ body::-webkit-scrollbar-thumb
 {
     background: rgba(0,99,65,1);
 }
+.carrito
+{
+    width: 35px;
+    height:35px;
+    background:url('../img/iconos/carrito.png')no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
 header.header
 {
   
