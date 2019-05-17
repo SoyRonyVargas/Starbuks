@@ -63,7 +63,7 @@ section.section-bebidas
 
 .icono-bebida.icono3
 {
-	background: url('../img/productos/8.png')no-repeat;
+	background: url('../img/productos/8.PNG')no-repeat;
 	background-size: contain;
 	background-position: center;
 	transform: translate(25%,-50%);
