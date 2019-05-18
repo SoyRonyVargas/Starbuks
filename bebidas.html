@@ -17,6 +17,7 @@
     <link rel="icon" type="image" href="img/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="css/modal.css">
 	<title></title>
 </head>
 <body>
@@ -105,7 +106,7 @@
      
      <div class="c-a" >
        <button class="agregar agregar2" id="1"> Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
        </div>
 
 
@@ -141,7 +142,7 @@
 
   <div class="c-a">
        <button class="agregar agregar2" id="2"> Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
 
@@ -178,7 +179,7 @@
 
   <div class="c-a">
        <button class="agregar"   > Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
 
@@ -214,7 +215,7 @@
 
        <div class="c-a">
        <button class="agregar"   > Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
 
@@ -251,7 +252,7 @@
 
   <div class="c-a">
        <button class="agregar"   > Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
 
@@ -289,7 +290,7 @@
 
   <div class="c-a">
        <button class="agregar"   > Añadir Al Carrito </button>
-       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       <button class="agregar saber" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
 
@@ -321,35 +322,7 @@
     <!-- <script type="text/javascript" src="scripts/bebidas.js"></script> -->
 
 
-    <script>
-
-    var botones = document.getElementsByClassName('agregar2')
-    //console.log(botones)
-    for(let i = 0 ; i < botones.length; i++)
-    {
-       //console.log(botones[i])
-       botones[i].addEventListener('click' , function(){
-
-         console.log(this.id)
-         switch(this.id)
-         {
-            default:
-            //console.log('soy '+this.id)
-            toastr.info('soy ' +this.id)
-            document.querySelector('#exampleModalScrollableTitle').innerHTML = "HEYEYE"
-            break
-            case '1':
-            toastr.info('soy el primiero')
-            document.querySelector('#exampleModalScrollableTitle').innerHTML = "Midnight Mint Mocha Frapucchino"
-            
-            break
-
-         }
-
-       })
-    }
-    
-   </script>
+    <script src="scripts/bebidas.js"></script>
 
 
 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
@@ -362,12 +335,18 @@
             </button>
           </div>
           <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus eveniet cum, nostrum quos exercitationem aliquid voluptas ut quidem. A voluptate labore dignissimos ducimus! Ex magni voluptas qui maxime cum!
+
+            <div class="item-image" id="img-global"></div>
+
+            <h4 class="item-description">Descripcion</h4>
+ 
+            <p class="item-text" id="meter-texto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis temporibus cum natus. Natus deleniti dolorem ex ipsum consequuntur accusamus voluptatum, iste voluptatem praesentium expedita ullam porro labore quos animi atque!
+            </p>
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
