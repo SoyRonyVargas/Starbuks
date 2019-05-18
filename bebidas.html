@@ -14,7 +14,6 @@
     <link rel="stylesheet" type="text/css" href="css/bebidas.css">
     <link rel="stylesheet" href="css/responsive-bebidas.css">  
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
-    <script type="text/javascript" src="scripts/bebidas.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>        
     <link rel="icon" type="image" href="img/logo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -106,7 +105,7 @@
      </ul>
      
      <div class="c-a" >
-       <button class="agregar"  onclick="ola()" id="1"> Añadir Al Carrito </button>
+       <button class="agregar agregar2" id="1"> Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
        </div>
 
@@ -142,7 +141,7 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar agregar2" id="2"> Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
@@ -179,7 +178,7 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar"   > Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
@@ -215,7 +214,7 @@
      </ul>
 
        <div class="c-a">
-       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar"   > Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
@@ -252,7 +251,7 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar"   > Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
@@ -290,7 +289,7 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar"   > Añadir Al Carrito </button>
        <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
 
      </div>
@@ -320,12 +319,42 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script>
+    <!-- <script type="text/javascript" src="scripts/bebidas.js"></script> -->
+ 
+   <script>
+   
     function ola()
     {
-       toastr.info('hey')
+       alert('hey')
     }
-    </script>
+    var botones = document.getElementsByClassName('agregar2')
+    //console.log(botones)
+    for(let i = 0 ; i < botones.length; i++)
+    {
+       //console.log(botones[i])
+       botones[i].addEventListener('click' , function(){
+
+         console.log(this.id)
+         switch(this.id)
+         {
+            default:
+            //console.log('soy '+this.id)
+            toastr.info('soy ' +this.id)
+            document.querySelector('#exampleModalScrollableTitle').innerHTML = "HEYEYE"
+            break
+            case '1':
+            toastr.info('soy el primiero')
+            document.querySelector('#exampleModalScrollableTitle').innerHTML = "Midnight Mint Mocha Frapucchino"
+            
+            break
+
+         }
+
+       })
+    }
+    
+   </script>
+
 
 <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable" role="document">
