@@ -156,6 +156,7 @@ section.section-bebidas
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 10px;
 }
 .c-a button.agregar
 {
@@ -171,7 +172,7 @@ section.section-bebidas
 	font-weight: bold;
 	padding: 8px;
 	display: none;
-	margin-right: 5px;
+	margin:0  5px;
 	font-size: 80%;
 	line-height: 10px;
 }
