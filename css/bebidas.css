@@ -200,3 +200,54 @@ section.section-bebidas
 	align-items: center;
 	justify-content: center;
 }
+.item-contacto
+{
+	border:1px solid #ddd;
+	margin: 30px;
+	transition: 500ms;
+}
+.icon-contacto
+{
+	width: 50px;
+	height: 50px;
+	background: url('../img/iconos/gmail.png')no-repeat;
+    background-size: cover;
+	margin: 20px auto;
+}
+
+.icon-contacto.w
+{
+	width: 50px;
+	height: 50px;
+	background: url('../img/iconos/whats.png')no-repeat;
+    background-size: cover;
+	margin: 20px auto;
+}
+.icon-contacto.me
+{
+	width: 50px;
+	height: 50px;
+	background: url('../img/iconos/me.png')no-repeat;
+    background-size: cover;
+	margin: 20px auto;
+}
+
+.type-contacto
+{
+	text-align: center;
+	font-size: 1.5em;
+}
+.name-contacto
+{
+	text-align: center;
+	color:rgba(0,99,65,1);
+}
+.item-contacto:hover
+{
+	background: rgba(0,99,65,1);
+	color:#fff;
+}
+.item-contacto:hover .name-contacto
+{
+	color:#fff;
+}
