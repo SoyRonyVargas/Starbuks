@@ -4,17 +4,21 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/bebidas.css">
-    <link rel="stylesheet" href="css/responsive-bebidas.css">
+    <link rel="stylesheet" href="css/responsive-bebidas.css">  
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
     <script type="text/javascript" src="scripts/bebidas.js"></script>
-    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>        
     <link rel="icon" type="image" href="img/logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 	<title></title>
 </head>
 <body>
@@ -101,9 +105,10 @@
      	<li class="res t"> Entera </li>
      </ul>
      
-     <div class="c-a">
-       <button class="agregar" id="1"> Añadir Al Carrito </button>
-     </div>
+     <div class="c-a" >
+       <button class="agregar"  onclick="ola()" id="1"> Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+       </div>
 
 
   	</div>
@@ -137,7 +142,9 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"> Añadir Al Carrito </button>
+       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+
      </div>
 
   </div>
@@ -172,7 +179,9 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"> Añadir Al Carrito </button>
+       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+
      </div>
 
   </div>
@@ -206,7 +215,9 @@
      </ul>
 
        <div class="c-a">
-       <button class="agregar"> Añadir Al Carrito </button>
+       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+
      </div>
 
   	</div>
@@ -241,7 +252,9 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"> Añadir Al Carrito </button>
+       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+
      </div>
 
   </div>
@@ -277,7 +290,9 @@
      </ul>
 
   <div class="c-a">
-       <button class="agregar"> Añadir Al Carrito </button>
+       <button class="agregar"  onclick="ola()" > Añadir Al Carrito </button>
+       <button class="agregar" data-toggle="modal" data-target="#exampleModalScrollable"> Ver más </button>
+
      </div>
 
   </div>
@@ -289,10 +304,46 @@
      </div>
 
     </section>
-
-    
+    <!-- Button trigger modal -->
+    <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
+         Launch demo modal
+       </button-->
+       
+  
 
 
 
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script>
+    function ola()
+    {
+       toastr.info('hey')
+    }
+    </script>
+
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi accusamus eveniet cum, nostrum quos exercitationem aliquid voluptas ut quidem. A voluptate labore dignissimos ducimus! Ex magni voluptas qui maxime cum!
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>

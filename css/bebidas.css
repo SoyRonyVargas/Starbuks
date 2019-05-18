@@ -50,9 +50,11 @@ section.section-bebidas
 {
 	width: 200px;
 	height: 200px;
+	
 	background:url('../img/productos/2.png')no-repeat;
 	background-size: contain;
-	transform: translate(50%, -50%);
+	transform: translate(25%, -50%);
+	background-position: center;
 }
 .icono-bebida.icono2
 {
@@ -81,15 +83,15 @@ section.section-bebidas
 {
 	background: url('../img/productos/10.png')no-repeat;
 	background-size: contain;
-	background-position: center;
-	transform: translate(25%,-50%);
+	background-position: center bottom;
+	transform: translate(25%,-40%);
 }
 .icono-bebida.icono6
 {
 	background: url('../img/productos/11-n.png')no-repeat;
 	background-size: contain;
 	background-position: center;
-	transform: translate(25%,-50%);
+	transform: translate(25%,-54%);
 }
 
 
@@ -103,6 +105,7 @@ section.section-bebidas
 	text-align: center;
 	font-family: Lato;
 	color:#979A9A;
+	font-size: 25px;
 
 }
 .item-bebida > hr.lineaHr
@@ -156,9 +159,9 @@ section.section-bebidas
 }
 .c-a button.agregar
 {
-	width: 70%;
+	width: 40%;
 	height: 30px;
-	border-radius: 30px;
+	border-radius: 5px;
 	border: none;
 	background-color: #fff;
 	margin-bottom: 10px;
@@ -168,6 +171,9 @@ section.section-bebidas
 	font-weight: bold;
 	padding: 8px;
 	display: none;
+	margin-right: 5px;
+	font-size: 80%;
+	line-height: 10px;
 }
 
 
@@ -189,5 +195,7 @@ section.section-bebidas
 }
 .item-bebida:hover button.agregar
 {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
