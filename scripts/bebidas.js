@@ -8,17 +8,17 @@ console.log(saber)
        botones[i].addEventListener('click' , function(){
 
          console.log(this.id)
-         switch(this.id)
+         switch(this)
          {
+            case botones[0]:
+            toastr.success('soy ' +this.id+ "jeje")            
+            break
             default:
             //console.log('soy '+this.id)
-            toastr.info('soy ' +this.id)
+            toastr.success('soy ' +this.id)
             //document.querySelector('#exampleModalScrollableTitle').innerHTML = "HEYEYE"
             break
-            case '1':
-            toastr.info('soy el primiero')
-            //document.querySelector('#exampleModalScrollableTitle').innerHTML = "Midnight Mint Mocha Frapucchino"
-            break
+
 
          }
 
