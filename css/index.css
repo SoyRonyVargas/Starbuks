@@ -9,6 +9,75 @@ body
    margin: 0;
    overflow-x:hidden;
 }
+.post
+{
+    position: fixed;
+    bottom: 20px;
+    width: 75px;
+    height: 75px;
+    left: 20px;
+    background:#000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bote 3s backwards infinite;
+    animation-delay: 3s;
+    transition: 600ms;
+}
+.icon-post
+{
+  
+    width: 50px;
+    height: 50px;
+    background: url('../img/iconos/pod.png')no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+}
+.post-second
+{
+   
+    bottom:0;
+    left:0;
+    animation: none;
+    width: 100%;
+    border-radius: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: flex-start;
+     
+     
+}
+@keyframes bote
+{
+     
+    25%
+    {
+        transform: scale(1.09);
+
+    }
+     50%
+     {
+         transform: scale(1);
+     }
+     75%
+     {
+        transform: scale(1.1);
+
+     }
+     100%
+     {
+        transform: scale(1);
+
+     }
+  
+
+
+
+}
+
+
 body::-webkit-scrollbar
 {
     width: 3px;

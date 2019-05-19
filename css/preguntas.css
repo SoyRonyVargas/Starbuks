@@ -1,0 +1,31 @@
+.section-preguntas
+{
+    height: 90vh;
+}
+h4.subtitulo
+{
+    color:rgba(0,99,63,1);
+}
+div.padre-preguntas
+{
+    width: 100%;
+    padding-bottom: 40px;
+}
+p.pregunta
+{
+    padding: 25px 35px;
+    font-size: 30px;
+    font-family: Lato;
+    padding-bottom: 0;
+    text-transform: capitalize;
+}
+hr.linear
+{
+    width: 90%;
+    margin: 0 0 0 40px;
+}
+p.respuesta
+{
+    padding: 0 35px 10px 35px;
+    font-family: Lato;
+}
