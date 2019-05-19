@@ -38,7 +38,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape de chocolate con galleta oreo"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/2.png")no-repeat'
+                'url("img/productos/2.png")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Midnight Mint Mocha Frapucchino"
@@ -49,7 +49,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape 2"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/4.jpg")no-repeat'
+                'url("img/productos/4.jpg")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Chip Moca Mint Frappuccino"
@@ -60,7 +60,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape 3"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/8.PNG")no-repeat'
+                'url("img/productos/8.PNG")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Mermaid Frappuccino & Blue"
@@ -71,7 +71,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape 3"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/7.png")no-repeat'
+                'url("img/productos/7.png")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Zombie Frappuccino Mango"
@@ -82,7 +82,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape 3"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/10.png")no-repeat'
+                'url("img/productos/10.png")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Berry Refresher Soda Sandia"
@@ -94,7 +94,7 @@ var saber = document.getElementsByClassName('saber')
                 innerHTML= "Frape 3"
                 
                 document.getElementById('img-global').style.background = 
-                'url("../img/productos/11-n.png")no-repeat'
+                'url("img/productos/11-n.png")no-repeat'
                 document.getElementById('img-global').style.backgroundSize = "contain"
                 document.getElementById('img-global').style.backgroundPosition = "center"
                 document.getElementById("exampleModalScrollableTitle").innerHTML = "Mango Deli Yogurt Frapucchino"
