@@ -1,6 +1,6 @@
 var botones = document.getElementsByClassName('agregar2')
 var saber = document.getElementsByClassName('saber')
-console.log(saber)
+//console.log(saber)
     //console.log(botones)
     for(let i = 0 ; i < botones.length; i++)
     {

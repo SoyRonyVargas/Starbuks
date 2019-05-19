@@ -1,16 +1,12 @@
  window.addEventListener('load', () => {
 
-	console.log('hey')
+//	console.log('hey')
 
-	let inicio = document.getElementById('logo')
+	let inicio = document.getElementById('verBebidas')
 	inicio.addEventListener('click' , () => {
   
-        window.location = "index.html"
+        window.location = "bebidas.html"
 
-	})
-
-	let ver = document.getElementById('ver-bebidas').addEventListener('click', ()=>{
-		window.location = "bebidas.html"
 	})
 	/*var ver = document.getElementById('ver-bebidas')
 	ver.addEventListener('click', ()=>{
