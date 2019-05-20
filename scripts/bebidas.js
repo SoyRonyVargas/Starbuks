@@ -1,3 +1,10 @@
+window.addEventListener('load', ()=>{
+   let logo = document.getElementById('logo')
+   logo.addEventListener('click', function(){
+       window.location = "index.html"
+   })
+})
+
 var botones = document.getElementsByClassName('agregar2')
 var saber = document.getElementsByClassName('saber')
 //console.log(saber)
