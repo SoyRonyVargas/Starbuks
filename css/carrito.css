@@ -1,0 +1,154 @@
+section.section-carrito
+{
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.container-carrito
+{
+    width: 100%;
+    height: 100%;
+    background: blue;
+    display: flex;
+    box-shadow: 2px 2px 16px rgba(0,0,0,.5);
+
+}
+.box-carrito2
+{
+    width: 50%;
+    height: 100%;
+    background: #f2f2f2;
+    border-left: 1px solid #ddd;
+    position: relative;
+}
+.box-carrito1
+{
+    width: 50%;
+    height: 100%;
+    background: #f2f2f2;
+}
+h2.pedido
+{
+    margin: 0;
+    padding: 20px;
+    font-family: Lato;
+    color:rgba(0,99,63,1);
+}
+.item-pedido-padre
+{
+    width: 95%;
+    margin: 10px auto;
+    background: #ddd;
+}
+
+.form-entrega
+{
+    width: 90%;
+    height: 10em;
+    margin: 0 auto;
+    background: #fff;
+}
+.c
+{
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+.c > .entrada
+{
+    width: 90%;
+    height: 35px;
+    border:none;
+    background: none;
+    border-bottom: 1px solid rgba(0,99,63,1);
+    outline: 0;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: normal;
+}   
+::placeholder
+{
+    color:rgba(0,0,0,.5);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.caja3
+{
+    height: 25%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.pagos
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 30px;
+
+     
+}
+.pagos select
+{
+    width: 70%;
+    height: 45px;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: Lato;
+    border-radius: 5px;
+    outline: 0;
+    margin: 0 5px;
+}
+.pagos select option
+{
+    background: #fff;
+}
+option:hover{
+    background: none;
+}
+.pagar-ya
+{
+    background: rgba(0,99,63,1);
+    color:#fff;
+    width: 50%;
+    height: 40px;
+    outline: 0;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 0px;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.pedido-comida
+{
+    font-size: 30px;
+    padding: 10px;
+    font-family: Lato;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    border-top: 1px solid #fff;
+}
+.item-pedido-img
+{
+    width: 400px;
+    height: 400px;
+    background: url('../img/productos/2.png')no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0px auto;
+}
+

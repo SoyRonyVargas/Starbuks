@@ -19,7 +19,27 @@ var saber = document.getElementsByClassName('saber')
          {
             case botones[0]:
             toastr.success('soy ' +this.id+ "jeje")            
+            localStorage.setItem('name' , 'moca 1')
+            window.location = "carrito-Midnight-Mint-Mocha-Frapucchino.html"
             break
+            case botones[1]:
+            window.location = "carrito-Chip-Moca-Mint-Frappuccino.html"            
+            break
+            case botones[2]:
+            window.location = "carrito-Mermaid-Frappuccino-&-blue.html"                           
+            break
+            case botones[3]:
+            window.location = "carrito-Zombie-Frappuccino-Mango.html"                                          
+            break
+            case botones[4]:
+               window.location = "carrito-Berry-Refresher-Soda-Sandia.html"
+            break
+            case botones[5]:
+               window.location = "carrito-Mango.html"
+            break
+
+
+            
             default:
             //console.log('soy '+this.id)
             toastr.success('soy ' +this.id)
