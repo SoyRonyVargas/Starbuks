@@ -26,7 +26,7 @@ var saber = document.getElementsByClassName('saber')
             window.location = "carrito-Chip-Moca-Mint-Frappuccino.html"            
             break
             case botones[2]:
-            window.location = "carrito-Mermaid-Frappuccino-&-blue.html"                           
+            window.location = "carrito-Mermaid-Frappuccino-Blue.html"                           
             break
             case botones[3]:
             window.location = "carrito-Zombie-Frappuccino-Mango.html"                                          
@@ -62,7 +62,7 @@ var saber = document.getElementsByClassName('saber')
             
                 case saber[0]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape de chocolate con galleta oreo"
+                innerHTML= "Frape de chocolate con galleta oreo, ¡Te encantara!"
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/2.png")no-repeat'
@@ -73,7 +73,7 @@ var saber = document.getElementsByClassName('saber')
                 
                 case saber[1]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape 2"
+                innerHTML= "Delicioso frappé a base de café.  Disponible en opción Light. ¡Disfrútalos!"
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/4.jpg")no-repeat'
@@ -84,7 +84,7 @@ var saber = document.getElementsByClassName('saber')
 
                 case saber[2]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape 3"
+                innerHTML= "Dulce yogurt con un toque de sabor a frutas y moras. ¡Delicioso!"
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/8.PNG")no-repeat'
@@ -95,7 +95,7 @@ var saber = document.getElementsByClassName('saber')
 
                 case saber[3]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape 3"
+                innerHTML= "Frape con toque de sabor a mango y salsa picante, nuestre receta de hallowen regresa!"
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/7.png")no-repeat'
@@ -106,7 +106,7 @@ var saber = document.getElementsByClassName('saber')
 
                 case saber[4]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape 3"
+                innerHTML= " Bebida exotica con variedad de frutas a elegir. "
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/10.png")no-repeat'
@@ -118,7 +118,7 @@ var saber = document.getElementsByClassName('saber')
 
                 case saber[5]:
                 document.querySelector("#meter-texto").
-                innerHTML= "Frape 3"
+                innerHTML= "Bebida de mango con pequeños trocitos de fruta y dulce espuma!"
                 
                 document.getElementById('img-global').style.background = 
                 'url("img/productos/11-n.png")no-repeat'
